@@ -15,3 +15,14 @@ def simulate_ride_distances():
     )
 
     return ride_dists
+
+def simulate_ride_speeds():
+    ride_speeds = np.concatenate(
+        (
+            np.random.normal(loc=30, scale=5, size=370),
+            np.random.normal(loc=30, scale=5, size=10),
+            np.random.normal(loc=50, scale=10, size=10),
+            np.random.normal(loc=15, scale=4, size=10),
+        )
+    )
+    return ride_speeds
